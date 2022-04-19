@@ -101,6 +101,7 @@ int main( )
     Model banco((char*)"Models/Element/Banco.obj");
     Model sillon((char*)"Models/Couch/Couch.obj");
     Model table((char*)"Models/Mesa/Mesa.obj");
+    Model Ant((char*)"Models/Anthurium/Anturio.obj");
     glm::mat4 projection = glm::perspective( camera.GetZoom( ), ( float )SCREEN_WIDTH/( float )SCREEN_HEIGHT, 0.1f, 100.0f );
     
   
@@ -118,7 +119,7 @@ int main( )
         DoMovement();
 
         // Clear the colorbuffer
-        glClearColor(0.40f, 0.88f, 0.89f, 1.0f);
+        glClearColor(0.282f, 0.254f, 0.180f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
         shader.Use();
@@ -130,7 +131,8 @@ int main( )
         // Draw the loaded model
         glm::mat4 model(1);
         glUniformMatrix4fv(glGetUniformLocation(shader.Program, "model"), 1, GL_FALSE, glm::value_ptr(model));
-        table.Draw(shader);
+        Ant.Draw(shader);
+        //table.Draw(shader);
         //sillon.Draw(shader);
         //banco.Draw(shader);
 
