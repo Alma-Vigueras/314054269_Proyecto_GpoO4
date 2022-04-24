@@ -102,6 +102,7 @@ int main( )
     Model sillon((char*)"Models/Couch/Couch.obj");
     Model table((char*)"Models/Mesa/Mesa.obj");
     Model Ant((char*)"Models/Anthurium/Anturio.obj");
+    Model Clock((char*)"Models/Clock/WallClock.obj");
     glm::mat4 projection = glm::perspective( camera.GetZoom( ), ( float )SCREEN_WIDTH/( float )SCREEN_HEIGHT, 0.1f, 100.0f );
     
   
@@ -131,7 +132,8 @@ int main( )
         // Draw the loaded model
         glm::mat4 model(1);
         glUniformMatrix4fv(glGetUniformLocation(shader.Program, "model"), 1, GL_FALSE, glm::value_ptr(model));
-        Ant.Draw(shader);
+        Clock.Draw(shader);
+        // Ant.Draw(shader);
         //table.Draw(shader);
         //sillon.Draw(shader);
         //banco.Draw(shader);
