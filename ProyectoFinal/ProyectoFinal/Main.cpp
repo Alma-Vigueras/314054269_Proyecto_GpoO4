@@ -104,6 +104,7 @@ int main()
     Model Ant((char*)"Models/Anthurium/Anturio.obj");
     Model Clock((char*)"Models/Clock/WallClock.obj");
     Model Projector((char*)"Models/Projector/Projector.obj");
+    Model Woofer((char*)"Models/Woofer/bocina.obj");
     glm::mat4 projection = glm::perspective(camera.GetZoom(), (float)SCREEN_WIDTH / (float)SCREEN_HEIGHT, 0.1f, 100.0f);
 
 
@@ -178,9 +179,13 @@ int main()
         glUniformMatrix4fv(glGetUniformLocation(shader.Program, "model"), 1, GL_FALSE, glm::value_ptr(model));
         banco.Draw(shader);
 
-       /* model = glm::mat4(1);
+        model = glm::mat4(1);
+        model = glm::translate(model, glm::vec3(0.8f, 0.0f, 1.5f));
+        //model = glm::rotate(model,glm::vec3(0.0f, 1.0f, 0.0));
+        //model = glm::translate(model, glm::vec3(1.7f, 0.5f, -2.9f));
+        model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));
         glUniformMatrix4fv(glGetUniformLocation(shader.Program, "model"), 1, GL_FALSE, glm::value_ptr(model));
-        banco2.Draw(shader);*/
+        Woofer.Draw(shader);
 
         // Swap the buffers
         glfwSwapBuffers(window);
