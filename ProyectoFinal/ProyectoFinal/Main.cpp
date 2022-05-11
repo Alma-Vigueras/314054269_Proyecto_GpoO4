@@ -40,6 +40,7 @@ bool firstMouse = true;
 GLfloat deltaTime = 0.0f;
 GLfloat lastFrame = 0.0f;
 float rot = -90.0f;
+float rot2 = 180.0f;
 bool anim = false;
 bool anim2 = false;
 
@@ -99,6 +100,7 @@ int main()
 
     // Load models
     Model Casa((char*)"Models/Casa/Casa.obj");
+    Model Puerta((char*)"Models/Door/Door2.obj");
     Model banco((char*)"Models/Element/Banco.obj");
     Model sillon((char*)"Models/Couch/Couch.obj");
     Model table((char*)"Models/Mesa/Mesa.obj");
@@ -123,7 +125,7 @@ int main()
         DoMovement();
 
         // Clear the colorbuffer
-        glClearColor(0.282f, 0.254f, 0.180f, 1.0f);
+        glClearColor(0.964f, 0.964f, 0.635f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
         shader.Use();
@@ -140,6 +142,13 @@ int main()
         glUniformMatrix4fv(glGetUniformLocation(shader.Program, "model"), 1, GL_FALSE, glm::value_ptr(model));
         Casa.Draw(shader);
 
+        model = glm::mat4(1);
+        model = glm::translate(model, glm::vec3(-0.7f, -0.1f, 3.5f));
+        model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));
+        model = glm::rotate(model, glm::radians(rot2), glm::vec3(0.0f, 1.0f, 0.0));
+        glUniformMatrix4fv(glGetUniformLocation(shader.Program, "model"), 1, GL_FALSE, glm::value_ptr(model));
+        Puerta.Draw(shader);
+
         //model = glm::mat4(1);
         //model = glm::translate(model, glm::vec3(0.5f, 0.0f, 0.5f));
         ////model = glm::rotate(model,glm::vec3(0.0f, 1.0f, 0.0));
@@ -148,13 +157,13 @@ int main()
         //glUniformMatrix4fv(glGetUniformLocation(shader.Program, "model"), 1, GL_FALSE, glm::value_ptr(model));
         //Projector.Draw(shader);
 
-        //model = glm::mat4(1);
-        //model = glm::translate(model, glm::vec3(0.5f, 0.0f, 0.5f));
-        ////model = glm::rotate(model,glm::vec3(0.0f, 1.0f, 0.0));
-        ////model = glm::translate(model, glm::vec3(1.7f, 0.5f, -2.9f));
-        //model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));
-        //glUniformMatrix4fv(glGetUniformLocation(shader.Program, "model"), 1, GL_FALSE, glm::value_ptr(model));
-        //Clock.Draw(shader);
+        model = glm::mat4(1);
+        model = glm::translate(model, glm::vec3(3.5f, 1.8f, 1.7f));
+        model = glm::rotate(model, glm::radians(rot), glm::vec3(0.0f, 1.0f, 0.0));
+        //model = glm::translate(model, glm::vec3(1.7f, 0.5f, -2.9f));
+        model = glm::scale(model, glm::vec3(0.2f, 0.2f, 0.2f));
+        glUniformMatrix4fv(glGetUniformLocation(shader.Program, "model"), 1, GL_FALSE, glm::value_ptr(model));
+        Clock.Draw(shader);
 
         //model = glm::mat4(1);
         //model = glm::translate(model, glm::vec3(-0.5f, 0.0f, 0.5f));
@@ -171,6 +180,14 @@ int main()
         //model = glm::scale(model, glm::vec3(0.2f, 0.2f, 0.0f));
         //glUniformMatrix4fv(glGetUniformLocation(shader.Program, "model"), 1, GL_FALSE, glm::value_ptr(model));
         //table.Draw(shader);
+
+        model = glm::mat4(1);
+        model = glm::translate(model, glm::vec3(1.5f, 0.0f, 1.5f));
+        //model = glm::rotate(model, glm::radians(rot), glm::vec3(0.0f, 1.0f, 0.0));
+        //model = glm::translate(model, glm::vec3(1.7f, 0.5f, -2.9f));
+        model = glm::scale(model, glm::vec3(0.5f, 0.5f, 0.5f));
+        glUniformMatrix4fv(glGetUniformLocation(shader.Program, "model"), 1, GL_FALSE, glm::value_ptr(model));
+        sillon.Draw(shader);
 
         //model = glm::mat4(1);
         //model = glm::translate(model, glm::vec3(1.5f, 0.0f, 1.5f));
