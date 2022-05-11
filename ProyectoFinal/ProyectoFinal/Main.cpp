@@ -173,16 +173,16 @@ int main()
         //glUniformMatrix4fv(glGetUniformLocation(shader.Program, "model"), 1, GL_FALSE, glm::value_ptr(model));
         //Ant.Draw(shader);
 
-        //model = glm::mat4(1);
-        //model = glm::translate(model, glm::vec3(1.0f, 0.5f, 1.0f));
-        ////model = glm::rotate(model,glm::vec3(0.0f, 1.0f, 0.0));
-        ////model = glm::translate(model, glm::vec3(1.7f, 0.5f, -2.9f));
-        //model = glm::scale(model, glm::vec3(0.2f, 0.2f, 0.0f));
-        //glUniformMatrix4fv(glGetUniformLocation(shader.Program, "model"), 1, GL_FALSE, glm::value_ptr(model));
-        //table.Draw(shader);
+        model = glm::mat4(1);
+        model = glm::translate(model, glm::vec3(2.9f, -0.2f, 0.8f));
+        model = glm::rotate(model, glm::radians(rot), glm::vec3(0.0f, 1.0f, 0.0));
+        //model = glm::translate(model, glm::vec3(1.7f, 0.5f, -2.9f));
+        model = glm::scale(model, glm::vec3(0.5f, 0.5f, 0.5f));
+        glUniformMatrix4fv(glGetUniformLocation(shader.Program, "model"), 1, GL_FALSE, glm::value_ptr(model));
+        table.Draw(shader);
 
         model = glm::mat4(1);
-        model = glm::translate(model, glm::vec3(1.85f, -0.1f, 0.5f));
+        model = glm::translate(model, glm::vec3(1.7f, -0.1f, 0.5f));
         //model = glm::rotate(model, glm::radians(rot), glm::vec3(0.0f, 1.0f, 0.0));
         //model = glm::translate(model, glm::vec3(1.7f, 0.5f, -2.9f));
         model = glm::scale(model, glm::vec3(1.0f, 1.0f, 1.0f));
@@ -190,20 +190,20 @@ int main()
         sillon.Draw(shader);
 
         model = glm::mat4(1);
-        model = glm::translate(model, glm::vec3(1.85f, -0.1f, 2.4f));
+        model = glm::translate(model, glm::vec3(1.7f, -0.1f, 2.4f));
         model = glm::rotate(model, glm::radians(rot2), glm::vec3(0.0f, 1.0f, 0.0));
         //model = glm::translate(model, glm::vec3(1.7f, 0.5f, -2.9f));
         model = glm::scale(model, glm::vec3(1.0f, 1.0f, 1.0f));
         glUniformMatrix4fv(glGetUniformLocation(shader.Program, "model"), 1, GL_FALSE, glm::value_ptr(model));
         sillon.Draw(shader);
 
-        //model = glm::mat4(1);
-        //model = glm::translate(model, glm::vec3(-0.5f, -0.1f, 0.5f));
-        ////model = glm::rotate(model,glm::vec3(0.0f, 1.0f, 0.0));
-        ////model = glm::translate(model, glm::vec3(1.7f, 0.5f, -2.9f));
-        //model = glm::scale(model, glm::vec3(0.5f, 0.5f, 0.5f));
-        //glUniformMatrix4fv(glGetUniformLocation(shader.Program, "model"), 1, GL_FALSE, glm::value_ptr(model));
-        //banco.Draw(shader);
+        model = glm::mat4(1);
+        model = glm::translate(model, glm::vec3(2.9f, 0.5f, 0.0f));
+        //model = glm::rotate(model,glm::vec3(0.0f, 1.0f, 0.0));
+        //model = glm::translate(model, glm::vec3(1.7f, 0.5f, -2.9f));
+        model = glm::scale(model, glm::vec3(0.5f, 0.5f, 0.5f));
+        glUniformMatrix4fv(glGetUniformLocation(shader.Program, "model"), 1, GL_FALSE, glm::value_ptr(model));
+        banco.Draw(shader);
 
         //model = glm::mat4(1);
         //model = glm::translate(model, glm::vec3(0.8f, 0.0f, 1.5f));
