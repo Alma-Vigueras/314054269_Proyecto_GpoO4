@@ -1,9 +1,9 @@
 ﻿  Main.cpp
-G:\Documentos\FI\CLASES SEM 2022-2\CGEIHC\Repositorio\314054269_Proyecto_GpoO4\ProyectoFinal\ProyectoFinal\Main.cpp(121,30): warning C4244: 'inicializando': conversión de 'double' a 'GLfloat'; posible pérdida de datos
-G:\Documentos\FI\CLASES SEM 2022-2\CGEIHC\Repositorio\314054269_Proyecto_GpoO4\ProyectoFinal\ProyectoFinal\Main.cpp(305,17): warning C4244: '=': conversión de 'double' a 'GLfloat'; posible pérdida de datos
-G:\Documentos\FI\CLASES SEM 2022-2\CGEIHC\Repositorio\314054269_Proyecto_GpoO4\ProyectoFinal\ProyectoFinal\Main.cpp(306,17): warning C4244: '=': conversión de 'double' a 'GLfloat'; posible pérdida de datos
-G:\Documentos\FI\CLASES SEM 2022-2\CGEIHC\Repositorio\314054269_Proyecto_GpoO4\ProyectoFinal\ProyectoFinal\Main.cpp(310,21): warning C4244: 'inicializando': conversión de 'double' a 'GLfloat'; posible pérdida de datos
-G:\Documentos\FI\CLASES SEM 2022-2\CGEIHC\Repositorio\314054269_Proyecto_GpoO4\ProyectoFinal\ProyectoFinal\Main.cpp(311,21): warning C4244: 'inicializando': conversión de 'double' a 'GLfloat'; posible pérdida de datos
-G:\Documentos\FI\CLASES SEM 2022-2\CGEIHC\Repositorio\314054269_Proyecto_GpoO4\ProyectoFinal\ProyectoFinal\Main.cpp(313,13): warning C4244: '=': conversión de 'double' a 'GLfloat'; posible pérdida de datos
-G:\Documentos\FI\CLASES SEM 2022-2\CGEIHC\Repositorio\314054269_Proyecto_GpoO4\ProyectoFinal\ProyectoFinal\Main.cpp(314,13): warning C4244: '=': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+G:\Documentos\FI\CLASES SEM 2022-2\CGEIHC\Repositorio\314054269_Proyecto_GpoO4\ProyectoFinal\ProyectoFinal\Main.cpp(122,30): warning C4244: 'inicializando': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+G:\Documentos\FI\CLASES SEM 2022-2\CGEIHC\Repositorio\314054269_Proyecto_GpoO4\ProyectoFinal\ProyectoFinal\Main.cpp(322,17): warning C4244: '=': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+G:\Documentos\FI\CLASES SEM 2022-2\CGEIHC\Repositorio\314054269_Proyecto_GpoO4\ProyectoFinal\ProyectoFinal\Main.cpp(323,17): warning C4244: '=': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+G:\Documentos\FI\CLASES SEM 2022-2\CGEIHC\Repositorio\314054269_Proyecto_GpoO4\ProyectoFinal\ProyectoFinal\Main.cpp(327,21): warning C4244: 'inicializando': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+G:\Documentos\FI\CLASES SEM 2022-2\CGEIHC\Repositorio\314054269_Proyecto_GpoO4\ProyectoFinal\ProyectoFinal\Main.cpp(328,21): warning C4244: 'inicializando': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+G:\Documentos\FI\CLASES SEM 2022-2\CGEIHC\Repositorio\314054269_Proyecto_GpoO4\ProyectoFinal\ProyectoFinal\Main.cpp(330,13): warning C4244: '=': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+G:\Documentos\FI\CLASES SEM 2022-2\CGEIHC\Repositorio\314054269_Proyecto_GpoO4\ProyectoFinal\ProyectoFinal\Main.cpp(331,13): warning C4244: '=': conversión de 'double' a 'GLfloat'; posible pérdida de datos
   ProyectoFinal.vcxproj -> G:\Documentos\FI\CLASES SEM 2022-2\CGEIHC\Repositorio\314054269_Proyecto_GpoO4\ProyectoFinal\Debug\ProyectoFinal.exe

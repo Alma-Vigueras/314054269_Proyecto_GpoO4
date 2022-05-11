@@ -101,6 +101,7 @@ int main()
     // Load models
     Model Casa((char*)"Models/Casa/Casa.obj");
     Model Puerta((char*)"Models/Door/Puerta2.obj"); 
+    Model Wind((char*)"Models/Ventanas/Window1.obj");
     Model Balcon((char*)"Models/Door/PuertaBalcon.obj");
     Model Grass((char*)"Models/Grass/Pasto.obj");
     Model banco((char*)"Models/Element/Banco.obj");
@@ -155,10 +156,26 @@ int main()
         model = glm::mat4(1);
         model = glm::translate(model, glm::vec3(-0.95f, 4.55f, 5.15f));
         model = glm::rotate(model, glm::radians(rot), glm::vec3(0.0f, 1.0f, 0.0));
-        model = glm::scale(model, glm::vec3(0.7f, 1.085f, 1.3f));
+        model = glm::scale(model, glm::vec3(0.7f, 1.08f, 1.3f));
         //model = glm::rotate(model, glm::radians(rot2), glm::vec3(0.0f, 1.0f, 0.0));
         glUniformMatrix4fv(glGetUniformLocation(shader.Program, "model"), 1, GL_FALSE, glm::value_ptr(model));
         Balcon.Draw(shader);
+
+        //Ventanal
+        model = glm::mat4(1);
+        model = glm::translate(model, glm::vec3(0.913f, 4.25f, 5.4f));
+        //model = glm::rotate(model, glm::radians(rot), glm::vec3(0.0f, 1.0f, 0.0));
+        model = glm::scale(model, glm::vec3(1.2f, 0.84f, 1.85f));
+        glUniformMatrix4fv(glGetUniformLocation(shader.Program, "model"), 1, GL_FALSE, glm::value_ptr(model));
+        Wind.Draw(shader);
+        
+        //Ventana Chica
+        model = glm::mat4(1);
+        model = glm::translate(model, glm::vec3(-2.6f, 4.15f, 4.0f));
+        //model = glm::rotate(model, glm::radians(rot), glm::vec3(0.0f, 1.0f, 0.0));
+        model = glm::scale(model, glm::vec3(0.2f, 0.2f, 1.85f));
+        glUniformMatrix4fv(glGetUniformLocation(shader.Program, "model"), 1, GL_FALSE, glm::value_ptr(model));
+        Wind.Draw(shader);
 
         //Franja pasto delgado
         model = glm::mat4(1);
