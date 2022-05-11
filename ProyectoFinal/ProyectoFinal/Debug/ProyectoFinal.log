@@ -1,11 +1,11 @@
 ﻿  Main.cpp
-G:\Documentos\FI\CLASES SEM 2022-2\CGEIHC\Repositorio\314054269_Proyecto_GpoO4\ProyectoFinal\ProyectoFinal\Main.cpp(119,30): warning C4244: 'inicializando': conversión de 'double' a 'GLfloat'; posible pérdida de datos
-G:\Documentos\FI\CLASES SEM 2022-2\CGEIHC\Repositorio\314054269_Proyecto_GpoO4\ProyectoFinal\ProyectoFinal\Main.cpp(278,17): warning C4244: '=': conversión de 'double' a 'GLfloat'; posible pérdida de datos
-G:\Documentos\FI\CLASES SEM 2022-2\CGEIHC\Repositorio\314054269_Proyecto_GpoO4\ProyectoFinal\ProyectoFinal\Main.cpp(279,17): warning C4244: '=': conversión de 'double' a 'GLfloat'; posible pérdida de datos
-G:\Documentos\FI\CLASES SEM 2022-2\CGEIHC\Repositorio\314054269_Proyecto_GpoO4\ProyectoFinal\ProyectoFinal\Main.cpp(283,21): warning C4244: 'inicializando': conversión de 'double' a 'GLfloat'; posible pérdida de datos
-G:\Documentos\FI\CLASES SEM 2022-2\CGEIHC\Repositorio\314054269_Proyecto_GpoO4\ProyectoFinal\ProyectoFinal\Main.cpp(284,21): warning C4244: 'inicializando': conversión de 'double' a 'GLfloat'; posible pérdida de datos
-G:\Documentos\FI\CLASES SEM 2022-2\CGEIHC\Repositorio\314054269_Proyecto_GpoO4\ProyectoFinal\ProyectoFinal\Main.cpp(286,13): warning C4244: '=': conversión de 'double' a 'GLfloat'; posible pérdida de datos
-G:\Documentos\FI\CLASES SEM 2022-2\CGEIHC\Repositorio\314054269_Proyecto_GpoO4\ProyectoFinal\ProyectoFinal\Main.cpp(287,13): warning C4244: '=': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+G:\Documentos\FI\CLASES SEM 2022-2\CGEIHC\Repositorio\314054269_Proyecto_GpoO4\ProyectoFinal\ProyectoFinal\Main.cpp(120,30): warning C4244: 'inicializando': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+G:\Documentos\FI\CLASES SEM 2022-2\CGEIHC\Repositorio\314054269_Proyecto_GpoO4\ProyectoFinal\ProyectoFinal\Main.cpp(293,17): warning C4244: '=': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+G:\Documentos\FI\CLASES SEM 2022-2\CGEIHC\Repositorio\314054269_Proyecto_GpoO4\ProyectoFinal\ProyectoFinal\Main.cpp(294,17): warning C4244: '=': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+G:\Documentos\FI\CLASES SEM 2022-2\CGEIHC\Repositorio\314054269_Proyecto_GpoO4\ProyectoFinal\ProyectoFinal\Main.cpp(298,21): warning C4244: 'inicializando': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+G:\Documentos\FI\CLASES SEM 2022-2\CGEIHC\Repositorio\314054269_Proyecto_GpoO4\ProyectoFinal\ProyectoFinal\Main.cpp(299,21): warning C4244: 'inicializando': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+G:\Documentos\FI\CLASES SEM 2022-2\CGEIHC\Repositorio\314054269_Proyecto_GpoO4\ProyectoFinal\ProyectoFinal\Main.cpp(301,13): warning C4244: '=': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+G:\Documentos\FI\CLASES SEM 2022-2\CGEIHC\Repositorio\314054269_Proyecto_GpoO4\ProyectoFinal\ProyectoFinal\Main.cpp(302,13): warning C4244: '=': conversión de 'double' a 'GLfloat'; posible pérdida de datos
 LINK : warning LNK4098: la biblioteca predeterminada'MSVCRT' entra en conflicto con otras bibliotecas; use la biblioteca /NODEFAULTLIB:biblioteca
 soil2-debug.lib(etc1_utils.obj) : warning LNK4099: no se encontró PDB 'soil2-debug.pdb' con 'soil2-debug.lib(etc1_utils.obj)' o en 'G:\Documentos\FI\CLASES SEM 2022-2\CGEIHC\Repositorio\314054269_Proyecto_GpoO4\ProyectoFinal\Debug\soil2-debug.pdb'; se vinculará el objeto sin tener en cuenta información de depuración
 soil2-debug.lib(image_DXT.obj) : warning LNK4099: no se encontró PDB 'soil2-debug.pdb' con 'soil2-debug.lib(image_DXT.obj)' o en 'G:\Documentos\FI\CLASES SEM 2022-2\CGEIHC\Repositorio\314054269_Proyecto_GpoO4\ProyectoFinal\Debug\soil2-debug.pdb'; se vinculará el objeto sin tener en cuenta información de depuración

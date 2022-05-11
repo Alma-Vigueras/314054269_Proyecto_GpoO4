@@ -100,7 +100,8 @@ int main()
 
     // Load models
     Model Casa((char*)"Models/Casa/Casa.obj");
-    Model Puerta((char*)"Models/Door/Door2.obj");
+    Model Puerta((char*)"Models/Door/Puerta2.obj"); 
+    Model Grass((char*)"Models/Grass/Pasto.obj");
     Model banco((char*)"Models/Element/Banco.obj");
     Model sillon((char*)"Models/Couch/Couch.obj");
     Model table((char*)"Models/Mesa/Mesa.obj");
@@ -143,11 +144,25 @@ int main()
         Casa.Draw(shader);
 
         model = glm::mat4(1);
-        model = glm::translate(model, glm::vec3(-0.7f, -0.1f, 3.5f));
-        model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));
-        model = glm::rotate(model, glm::radians(rot2), glm::vec3(0.0f, 1.0f, 0.0));
+        model = glm::translate(model, glm::vec3(0.1f, 0.8f, 3.5f));
+        model = glm::scale(model, glm::vec3(0.4f, 0.4f, 0.2f));
+        //model = glm::rotate(model, glm::radians(rot2), glm::vec3(0.0f, 1.0f, 0.0));
         glUniformMatrix4fv(glGetUniformLocation(shader.Program, "model"), 1, GL_FALSE, glm::value_ptr(model));
         Puerta.Draw(shader);
+
+        model = glm::mat4(1);
+        model = glm::translate(model, glm::vec3(0.0f, 0.3f, 7.0f));
+        model = glm::scale(model, glm::vec3(0.03f, 1.8f, 0.2f));
+        //model = glm::rotate(model, glm::radians(rot2), glm::vec3(0.0f, 1.0f, 0.0));
+        glUniformMatrix4fv(glGetUniformLocation(shader.Program, "model"), 1, GL_FALSE, glm::value_ptr(model));
+        Grass.Draw(shader);
+
+        model = glm::mat4(1);
+        model = glm::translate(model, glm::vec3(-2.0f, 0.3f, 7.0f));
+        model = glm::scale(model, glm::vec3(0.05f, 1.0f, 0.2f));
+        //model = glm::rotate(model, glm::radians(rot2), glm::vec3(0.0f, 1.0f, 0.0));
+        glUniformMatrix4fv(glGetUniformLocation(shader.Program, "model"), 1, GL_FALSE, glm::value_ptr(model));
+        Grass.Draw(shader);
 
         model = glm::mat4(1);
         model = glm::translate(model, glm::vec3(2.95f, 0.78f, 1.5f));
