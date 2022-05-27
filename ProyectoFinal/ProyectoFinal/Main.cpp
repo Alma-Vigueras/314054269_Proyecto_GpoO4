@@ -117,6 +117,8 @@ int main()
 
     Model Mesa((char*)"Models/Table/WoodTable.obj");
     Model Silla((char*)"Models/Chair/Silla.obj");
+    Model Tul((char*)"Models/Tulips/Tulipan.obj");
+
 
     glm::mat4 projection = glm::perspective(camera.GetZoom(), (float)SCREEN_WIDTH / (float)SCREEN_HEIGHT, 0.1f, 100.0f);
 
@@ -302,7 +304,7 @@ int main()
 
         //Mesa
         model = glm::mat4(1);
-        model = glm::translate(model, glm::vec3(-1.0f, 0.2f, -3.0f));
+        model = glm::translate(model, glm::vec3(-1.5f, 0.2f, -3.0f));
         model = glm::rotate(model, glm::radians(rot2), glm::vec3(0.0f, 1.0f, 0.0));
         //model = glm::translate(model, glm::vec3(1.7f, 0.5f, -2.9f));
         model = glm::scale(model, glm::vec3(3.5f, 3.5f, 3.5f));
@@ -311,12 +313,48 @@ int main()
 
         //silla 
         model = glm::mat4(1);
-        model = glm::translate(model, glm::vec3(-0.7f, 0.2f, -2.0f));
-        model = glm::rotate(model, glm::radians(rot), glm::vec3(0.0f, 1.0f, 0.0));
+        model = glm::translate(model, glm::vec3(-1.8f, 0.2f, -2.7f));
+        model = glm::rotate(model, glm::radians(-rot2), glm::vec3(0.0f, 1.0f, 0.0));
         //model = glm::translate(model, glm::vec3(1.7f, 0.5f, -2.9f));
-        model = glm::scale(model, glm::vec3(1.4f, 1.4f, 1.4f));
+        model = glm::scale(model, glm::vec3(2.0f, 2.0f, 2.0f));
         glUniformMatrix4fv(glGetUniformLocation(shader.Program, "model"), 1, GL_FALSE, glm::value_ptr(model));
         Silla.Draw(shader);
+
+        //silla 2
+        model = glm::mat4(1);
+        model = glm::translate(model, glm::vec3(-1.7f, 0.2f, -3.5f));
+        model = glm::rotate(model, glm::radians(rot), glm::vec3(0.0f, 1.0f, 0.0));
+        //model = glm::translate(model, glm::vec3(1.7f, 0.5f, -2.9f));
+        model = glm::scale(model, glm::vec3(2.0f, 2.0f, 2.0f));
+        glUniformMatrix4fv(glGetUniformLocation(shader.Program, "model"), 1, GL_FALSE, glm::value_ptr(model));
+        Silla.Draw(shader);
+
+        //silla 3
+        model = glm::mat4(1);
+        model = glm::translate(model, glm::vec3(-2.0f, 0.2f, -2.8f));
+        //model = glm::rotate(model, glm::radians(rot), glm::vec3(0.0f, 1.0f, 0.0));
+        //model = glm::translate(model, glm::vec3(1.7f, 0.5f, -2.9f));
+        model = glm::scale(model, glm::vec3(2.0f, 2.0f, 2.0f));
+        glUniformMatrix4fv(glGetUniformLocation(shader.Program, "model"), 1, GL_FALSE, glm::value_ptr(model));
+        Silla.Draw(shader);
+
+        //Silla 4
+        model = glm::mat4(1);
+        model = glm::translate(model, glm::vec3(-1.8f, 0.2f, -2.2f));
+        model = glm::rotate(model, glm::radians(-rot), glm::vec3(0.0f, 1.0f, 0.0));
+        //model = glm::translate(model, glm::vec3(1.7f, 0.5f, -2.9f));
+        model = glm::scale(model, glm::vec3(2.0f, 2.0f, 2.0f));
+        glUniformMatrix4fv(glGetUniformLocation(shader.Program, "model"), 1, GL_FALSE, glm::value_ptr(model));
+        Silla.Draw(shader);
+
+        //Tulipanes 
+        model = glm::mat4(1);
+        model = glm::translate(model, glm::vec3(-1.5f, 0.5f, -2.5f));
+        model = glm::rotate(model, glm::radians(rot2), glm::vec3(0.0f, 1.0f, 0.0));
+        //model = glm::translate(model, glm::vec3(1.7f, 0.5f, -2.9f));
+        model = glm::scale(model, glm::vec3(2.0f, 2.0f, 2.0f));
+        glUniformMatrix4fv(glGetUniformLocation(shader.Program, "model"), 1, GL_FALSE, glm::value_ptr(model));
+        Tul.Draw(shader);
 
         // Swap the buffers
         glfwSwapBuffers(window);

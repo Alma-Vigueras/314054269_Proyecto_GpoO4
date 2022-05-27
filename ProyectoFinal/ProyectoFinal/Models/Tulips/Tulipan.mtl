@@ -1,0 +1,60 @@
+newmtl Line102SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 0.12 0.12 0.12
+map_Kd Florero.jpg
+Ni 1.00
+Ks 0.94 0.94 0.94
+Ns 1022.00
+newmtl Object001SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 0.02 0.02 0.02
+map_Kd Florero.jpg
+Ni 1.00
+Ks 0.95 0.95 0.95
+Ns 1022.00
+newmtl Plane005SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd tyulpan.jpg
+Ni 1.00
+Ks 0.20 0.20 0.20
+Ns 179.02
+newmtl Plane005SG1
+illum 4
+Kd 0.24 0.34 0.11
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.31 0.31 0.31
+Ns 413.87
+newmtl Plane058SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd tulLea.jpg
+Ni 1.00
+Ks 0.31 0.31 0.31
+Ns 413.87
+newmtl lambert2SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd tyulpan.jpg
+Ni 1.00
+newmtl phong1SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 0.33 0.33 0.33
+map_Kd Florero.jpg
+Ni 1.00
+Ks 0.50 0.50 0.50
+Ns 18.00
